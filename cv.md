@@ -21,7 +21,7 @@
       return (matches);  
     }  
 
-**Code example. Count the divisors of a number. Python**
+**Code example. Square numbers. Python**
 
     def square_digits(num):  
         x = [int(a) for a in str(num)]
