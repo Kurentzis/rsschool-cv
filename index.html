@@ -7,14 +7,59 @@
         <title>Oleg Lasukov</title>
       </head>
       <body>
-          <header>
+          <div class="content">
+            <header>
+                <div class="logo-box"></div>
+                <h1>Oleg Lasukov</h1>
+            </header>
+            <main>
+                <h2>About me</h2>
+                <p>Hello! My name is Oleg and I am current student in BYU Idaho (Applied Technologies(BS)). My first priority is to become a good professional in IT industry. 
+                    Despite of the fact, that I don’t have a real work experience, the following personalities are my friends on that difficult and 
+                    breathtaking adventure: I am stubborn, responsible, capable to learn, enthusiastic, and much more.</p>
+                
+                <h2>Programming languages and technologies</h2>
+                <p>HTML, CSS, JS, Python, and a little bit of PHP and JAVA. Also there was an opportunity to work with pandas, os, and arcade libraries for Python.</p>
 
-          </header>
-          <main>
+                <h2>Code Examples</h2>
+                <h4>Code example. Count the divisors of a number. JS</h4>
+                <code>function getDivisorsCnt(n){  
+                    let i = 0;  
+                    let matches = 0;  
+                    for (i; i <= n; i++){  
+                      if (n % i == 0){  
+                        matches += 1;  
+                      }  
+                    }  
+                    return (matches);  
+                  }  </code>
 
-          </main>
-          <footer>
-              
-          </footer>
+                  <h4>Code example. Square numbers. Python</h4>
+
+                  <code>
+                    def square_digits(num):  
+                    x = [int(a) for a in str(num)]
+                    squared_nums = []
+                    for i in x:
+                        squared_num = i**2
+                        squared_num = str(squared_num)
+                        squared_nums.append(squared_num)
+                    separator = ''
+                    result = separator.join(squared_nums)
+                    result = int(result)
+                    return (result)
+                  </code>
+
+                  <h2>I am looking for my first job. I am a student in RS School</h2>
+                  <p>Except of RS SChool education I am a student in BYU. That is a private university in the United States of America. I am taking an online program 
+                      in Applied Technologies(BS). At this moment that’s been 3 semesters and 5 classes after start, which is related to OOP, 
+                      Front-end, and Web-Engineering</p>
+
+                    <p>My English is approximately intermediate. Since I am a student in American school I have bunch of language practice</p>
+            </main>
+            <footer>
+  
+            </footer>
+          </div>
       </body>
 </html>
