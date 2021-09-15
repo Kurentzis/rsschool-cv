@@ -1,0 +1,49 @@
+#cs213-icon{
+    width: 90px;
+    height: 90px;
+}
+#byu-icon{
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+#vk{
+    width: 90px;
+    height: 90px;
+}
+.icons:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+span.icons{
+    display: inline-block;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+}
+div#icon-wrapper{
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient( black, rgb(79, 155, 4));
+
+}
+header{
+    background-image: linear-gradient( rgb(79, 155, 4) ,black);
+}
+body{
+    color: white;
+    font-family: fantasy;
+    font-style: italic;
+    background-color: black;
+}
+#me{
+    height: 600px;
+    width: 450px;
+}
+h1{
+    float: right;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
