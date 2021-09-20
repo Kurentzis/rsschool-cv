@@ -11,7 +11,7 @@
     width: 90px;
     height: 90px;
 }
-#tec_icons:hover{
+.tec_icons:hover{
     filter: drop-shadow(16px 16px 20px green);
     transform: skew(30deg, 20deg) ;
 }
@@ -99,7 +99,7 @@ pre{
     color: black ;
     line-height: 39px;
 }
-#colored{
+.colored{
     color: rgb(79, 155, 4);
 }
 a:link{
@@ -129,7 +129,7 @@ a:active{
     main{
         display: block;
     }
-    #tec_icons{
+    .tec_icons{
         max-width: 10%;
         padding-top: 5px;
         padding-bottom: 5px;
