@@ -5,14 +5,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
   <title>Oleg Lasukov</title>
 </head>
 
 <body>
   <div class="content">
     <header>
-      <h1 id="top_header">Oleg Lasukov<br> Resume</h1>
-      <div class="logo-box"><img id="me" src="UJaS11i1zQM.jpg" alt="This is me"></div>
+      <div class="logo-box"><img id="me" src="UJaS11i1zQM.jpg" alt="This is me">
+        <h1 id="top_header">Oleg Lasukov<br> Resume</h1>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#about_me">About me</a></li>
+          <li><a class="menu__item" href="#languages">Programming languages and technologies</a></li>
+          <li><a class="menu__item" href="#codes">Code Examples</a></li>
+          <li><a class="menu__item" href="#education">Education</a></li>
+          <li><a class="menu__item" href="#eng">English</a></li>
+        </ul>
+      </div>
+      
+      <nav>
+        <ul>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#languages">Programming languages and technologies</a></li>
+            <li><a href="#codes">Code Examples</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#eng">English</a></li>
+        </ul>
+    </nav>
+
     </header>
     <main>
       <aside>
@@ -30,14 +58,14 @@
         </ul>
       </aside>
       <section class="main">
-        <h2>About me</h2>
+        <h2 id="about_me">About me</h2>
         <p>Hello! My name is Oleg and I am current student in BYU Idaho (Applied Technologies(BS)). My first
           priority is to become a good professional in IT industry.
           Despite of the fact, that I don’t have a real work experience, the following personalities are my
           friends on that difficult and
           breathtaking adventure: I am stubborn, responsible, capable to learn, enthusiastic, and much more.</p>
 
-        <h2>Programming languages and technologies:</h2>
+        <h2 id="languages">Programming languages and technologies:</h2>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -49,11 +77,11 @@
         <p> Also there was an opportunity to work with
           pandas, os, and arcade libraries for Python.</p>
 
-        <h2>Code Examples</h2>
+        <h2 id="codes">Code Examples</h2>
         <h4>Code example. Count the divisors of a number. JS</h4>
 
         <pre>
-<code>
+<code class="language-js">
   function getDivisorsCnt(n){  
     let i = 0;  
     let matches = 0;  
@@ -69,7 +97,7 @@
 
         <h4>Code example. Square numbers. Python</h4>
         <pre>
- <code>
+ <code class="Python">
    def square_digits(num):  
    x = [int(a) for a in str(num)]
    squared_nums = []
@@ -84,7 +112,7 @@
  </code>
 </pre>
 
-        <h2>I am looking for my first job. I am a student in RS School and BYU Idaho</h2>
+        <h2 id="education">I am looking for my first job. I am a student in RS School and BYU Idaho</h2>
         <p>Except of RS School I am a student in BYU. That is a private university in the United States of
           America. I am taking an online program
           in Applied Technologies(BS). At this moment that’s been 3 semesters and 5 classes after start, which is
@@ -93,7 +121,7 @@
           Front-end, and Web-Engineering.</p>
         <h2>English</h2>
 
-        <p>My English is approximately intermediate or higher. Since I am a student in American school I have bunch
+        <p id="eng">My English is approximately intermediate or higher. Since I am a student in American school I have bunch
           of language practice.</p>
       </section>
     </main>
