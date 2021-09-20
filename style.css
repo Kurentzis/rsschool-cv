@@ -1,0 +1,78 @@
+#git-icon{
+    width: 90px;
+    height: 90px;
+}
+#rs-icon{
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+#vk{
+    width: 90px;
+    height: 90px;
+}
+#tec_icons{
+    width: 40%;
+    height:8%;     
+}
+#tec_icons:hover{
+    filter: drop-shadow(16px 16px 20px green);
+    transform: skew(30deg, 20deg) ;
+}
+
+.icons:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+span.icons{
+    display: inline-block;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+}
+footer{
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient( black, rgb(79, 155, 4));
+
+}
+header{
+    background-image: linear-gradient( rgb(79, 155, 4) ,black);
+}
+body{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: black;
+    line-height: 27px;
+    font-size: 1.3em;
+}
+
+#me{
+    height: 600px;
+    width: 450px;
+}
+h1{
+    float: right;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    border: 5px solid rgb(79, 155, 4);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+aside{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
