@@ -15,69 +15,85 @@
   <div class="content">
     <header>
       <div class="logo-box"><img id="me" src="UJaS11i1zQM.jpg" alt="This is me">
-        <h1 id="top_header">Oleg Lasukov<br> Resume</h1>
+        <h1 id="top_header">Резюме</h1>  
       </div>
+
+        <nav class="menu">
+          <ul class="nav_items">
+              <li><a id="default" href="#about_me">Обо мне</a></li>
+              <li><a href="#languages">Языки программирования</a></li>
+              <li><a href="#codes">Примеры кода</a></li>
+              <li><a href="#education">Образование</a></li>
+              <li><a href="#eng">Иностранные языки</a></li>
+          </ul>
+      </nav>
+
+      
+      
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
         <ul class="menu__box">
-          <li><a class="menu__item" href="#about_me">About me</a></li>
-          <li><a class="menu__item" href="#languages">Programming languages and technologies</a></li>
-          <li><a class="menu__item" href="#codes">Code Examples</a></li>
-          <li><a class="menu__item" href="#education">Education</a></li>
-          <li><a class="menu__item" href="#eng">English</a></li>
+          <li><a class="menu__item" href="#about_me">Обо мне</a></li>
+          <li><a class="menu__item" href="#languages">Языки программирования</a></li>
+          <li><a class="menu__item" href="#codes">Примеры кода</a></li>
+          <li><a class="menu__item" href="#education">Образование</a></li>
+          <li><a class="menu__item" href="#eng">Иностранные языки</a></li>
         </ul>
       </div>
       
-      <nav>
-        <ul>
-            <li><a href="#about_me">Обо мне</a></li>
-            <li><a href="#languages">Programming languages and technologies</a></li>
-            <li><a href="#codes">Code Examples</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#eng">English</a></li>
-        </ul>
-    </nav>
+
 
     </header>
     <main>
       <aside>
-        <h2>Technologies I work with:</h2>
+        <h2>Технологии:</h2>
         <img class="tec_icons" src="html.png" alt="HTML icon">
         <img class="tec_icons" src="css.png" alt="CSS icon">
         <img class="tec_icons" src="js.png" alt="JS icon">
         <img class="tec_icons" src="python.png" alt="Python icon">
         <img class="tec_icons" src="php.png" alt="php icon">
-        <img class="tec_icons" src="java.png" alt="java icon">
+        <img class="tec_icons java" src="java.png" alt="java icon">
+        <img class="tec_icons C" src="c.png" alt="C sharp icon">
+        <img class="tec_icons unity" src="Unity.png" alt="Unity icon">
+        
         <ul class="contacts">
-          <li><h3 class="colored">Contacts:</h3></li>
-          <li><span class="colored"> Number:</span> +7-902-643-0305</li>
+          <li><h3 class="colored">Контакты:</h3></li>
+          <li><span class="colored"> Телефон:</span> +7-902-643-0305</li>
           <li><span class="colored">Email:</span> Lasukov2016@mail.ru</li>
         </ul>
       </aside>
       <section class="main">
-        <h2 id="about_me">About me</h2>
-        <p>Hello! My name is Oleg and I am current student in BYU Idaho (Applied Technologies(BS)). My first
-          priority is to become a good professional in IT industry.
-          Despite of the fact, that I don’t have a real work experience, the following personalities are my
-          friends on that difficult and
-          breathtaking adventure: I am stubborn, responsible, capable to learn, enthusiastic, and much more.</p>
+        <h2 id="about_me">Обо мне</h2>
+        <p> Доброго времени суток! Меня зовут Олег Ласуков. Я студент в BYU-IDAHO (Applied Technologies(BS)).
+          Мой главный приоритет в жизни - это стать хорошим, сильным, всесторонне развитым профессионалом в IT индустрии. 
+          Несмотря на отсутствие у меня опыта коммерческой разработки к настоящему времени, мои сильные стороны, такие как: упорство, ответственность, способность к обучению, любовь к своему делу и обилие энтузиазма - это мои 
+          лучшие друзья на этом непростом и захватывающем пути!
+          Еще увлекаюсь гейм разработкой и аквариумистикой.<br>
+          </p>
 
-        <h2 id="languages">Programming languages and technologies:</h2>
-        <ul>
+        <h2 id="languages">Языки программирования и технологии:</h2>
+        <ul class="programming_languages">
           <li>HTML</li>
           <li>CSS</li>
           <li>JS</li>
           <li>Python</li>
-          <li>PHP</li>
           <li>JAVA</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>Git/GitHub</li>
+          <li>Figma</li>
+          <li>C#</li>
+          <li>Unity</li>
+          
         </ul>
-        <p> Also there was an opportunity to work with
-          pandas, os, and arcade libraries for Python.</p>
+        <p> Также знаком с большинством популярных IDE и редакторов кода, таких как: Microsoft Visual Studio, Visual Studio Сode,
+          IntelliJ IDEA, Android Studio и другие.
+        </p>
 
-        <h2 id="codes">Code Examples</h2>
+        <h2 id="codes">Примеры кода</h2>
         <h4>Code example. Count the divisors of a number. JS</h4>
 
         <pre>
@@ -112,16 +128,85 @@
  </code>
 </pre>
 
-        <h2 id="education">I am looking for my first job. I am a student in RS School and BYU Idaho</h2>
-        <p>Except of RS School I am a student in BYU. That is a private university in the United States of
-          America. I am taking an online program
-          in Applied Technologies(BS). At this moment that’s been 3 semesters and 5 classes after start, which is
-          related to OOP (Here is my last OOP project for BYU class: <a href="https://github.com/Kurentzis/Asteroids"
-            target="_blank">Asteroids game</a>),
-          Front-end, and Web-Engineering.</p>
+<h4>Code example. Interface control. C#</h4>
+<pre>
+<code class="Python">
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class InterfaceManager : MonoBehaviour
+  {
+      // Start is called before the first frame update
+      private float lives = 3.0f;
+      private float score = 0.0f;
+      private bool isAlive = true;
+      public GameObject player;
+
+      void Start()
+      {
+          Invoke("DisplayLives", 0.1f);
+          Invoke("DisplayScore", 0.1f);
+      }
+  
+      // Update is called once per frame
+      void Update()
+      {
+          if(isAlive)
+          {
+              checkLives();
+          }    
+      }
+  
+      public void DisplayLives()
+      {
+          Debug.Log("Lives: "+ lives);
+      }
+  
+      public void DisplayScore()
+      {
+          Debug.Log("Score: "+ score);
+      }
+  
+      public void IncreaseScore(int x)
+      {
+          score += x;
+          DisplayScore();
+      }
+  
+      public void DecreaseLives()
+      {
+          lives = lives - 0.5f;
+      }
+  
+      void checkLives()
+      {
+          if (lives <= 0)
+          {
+              Invoke("FinishTheGame", 0.0f);
+              isAlive=false;
+          }
+      }
+  
+      void FinishTheGame()
+      {
+              Debug.Log("Game over!");
+              Destroy(player);
+      }
+  }
+  
+</code>
+</pre>
+
+        <h2 id="education">Образование</h2>
+        <p>В 2015 году получил образование по специальности 'Дирижирование академическим хором'. До 2017 года учился в консерватории имени М.И.Глинки. 
+          С осени 2020 года получаю высшее образование в BYU-Idaho по специальности "Прикладная информатика" в формате онлайн обучения. BYU - это частный универстит в США, имеющий 
+          государственную аккредитацию для ведения образовательной деятельности. К настоящему моменту я закончил 7 курсов (по 14 недель каждый) связанных с 
+           Объектно оринтерованным программированием, веб инжинерией и веб разработкой в целом.
         <h2>English</h2>
 
-        <p id="eng">My English is approximately intermediate or higher. Since I am a student in American school I have bunch
+        <p id="eng">My English is approximately between intermediate and advanced level. 
+          In my daily studies I do not face any difficulties with reading technical documentation in English. Since I am a student in American school - I have bunch
           of language practice.</p>
       </section>
     </main>
@@ -143,7 +228,7 @@
             title="RS School"></a>
       </span>
 
-      <p>Created in 2021</p>
+      <p>Created in 2022</p>
 
 
     </footer>

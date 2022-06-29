@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3,h4,h6 {
+    margin-top: 30px;
+}
 #git-icon{
     width: 90px;
     height: 90px;
@@ -16,6 +26,13 @@
     transform: skew(30deg, 20deg) ;
 }
 
+.C {
+    width: 150px;
+}
+.unity{
+    width: 300px;
+}
+
 .icons:hover{
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
@@ -28,41 +45,95 @@ span.icons{
 }
 footer{
     text-align: center;
-    margin-bottom: 20px;
-    background-image: linear-gradient( black, rgb(79, 155, 4));
+    padding-bottom: 20px;
+    background-image: linear-gradient( rgb(15, 15, 15), rgb(79, 155, 4));
 }
 header{
-    background-image: linear-gradient( rgb(79, 155, 4) ,black);
+    background-image: linear-gradient( rgb(79, 155, 4) ,rgb(15, 15, 15));
     display: flex;
     flex-direction: column;
 }
+
+.logo-box
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav_items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav_items #default{
+    cursor: pointer;
+}
+.nav_items #default:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: rgb(79, 155, 4);
+    transition: width 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_items a {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+}
+.nav_items a:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(79, 155, 4);
+    transition: width 0.4s ease-in-out;
+}
+
+.nav_items a:hover:after,
+.nav_items a:focus:after {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav_items a:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     line-height: 1.9rem;
     font-size: 1.3em;
 }
 #me{
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
-    border-radius: 5%;
-    grid-column: 2;
-    grid-row: 1/4;
-    
+    border-radius: 5%;  
 }
+
 #top_header{
-    padding-right: 10px;
-    color: black;
-    border-top: none;
-    border-bottom:none;
+    text-align: right;
+    color: black ;
+    line-height: 39px;
+    margin-top: 50px;
+    text-align: center;
+
     border-top: 5px double;
     border-bottom: 5px double;
+    height: 40px;
+    width: 400px;
 }
 
 h1{
-    float: right;
+    align-self: right;
     text-transform: uppercase;
     border-top: 5px double;
     border-bottom: 5px double;
@@ -97,11 +168,8 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-#top_header{
-    text-align: right;
-    color: black ;
-    line-height: 39px;
-}
+
+
 .colored{
     color: rgb(79, 155, 4);
 }
@@ -120,6 +188,9 @@ a:active{
 #contacts{
     list-style: none;
 }
+nav{
+    margin-top: 10px;
+}
 nav ul{
     list-style: none;
     display: grid;
@@ -129,7 +200,15 @@ nav ul{
     font-family: fantasy;
 }
 
-.menu__box, #menu__toggle{
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+
+
+.menu__box, .hamburger-menu, #menu__toggle{
     display: none;
 }
 
@@ -145,6 +224,27 @@ nav ul{
     #me{
         max-width: 30%;
     }
+    .logo-box
+    {
+        width: 100%;
+        flex-direction: row;
+    }
+    header
+    {
+        flex-direction: column;
+    }
+    #top_header{
+        max-width: 400px;
+        font-size: 30px;
+    }
+    .menu{
+        display: none;
+    }
+.hamburger-menu{
+    display: block;
+}
+
+  
     main{
         display: block;
     }
@@ -161,8 +261,9 @@ nav ul{
         display: flex; 
         align-items: center;
         position: fixed;
+        margin-left: 20px;
         top: 20px;
-        left: 25px;
+        right: 25px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -176,8 +277,8 @@ nav ul{
         display: block;
         position: absolute;
         width: 100%;
-        height: 2px;
-        background-color: green;
+        height: 3px;
+        background-color: white;
       }
       .menu__btn > span::before {
         content: '';
@@ -196,7 +297,7 @@ nav ul{
         left: -100%;
         width: 300px;
         height: 100%;
-        margin: 0;
+        margin-right: 0;
         padding: 80px 0;
         list-style: none;
         text-align: center;
@@ -246,16 +347,14 @@ nav ul{
       nav ul{
 display: none;
     }
-    #top_header{
-        max-width: 150px;
-        font-size: 30px;
+    .programming_languages {
+        margin-left: 15px;
     }
+
     .content{
         max-width: 95%;
     }
-    header{
-        display: flex;
-        flex-direction: row;
-    }
+
+
 
 }
